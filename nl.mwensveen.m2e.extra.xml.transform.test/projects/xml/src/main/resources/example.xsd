@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2012, M. Wensveen (mwensveen.nl)
+    All rights reserved.
+
+    This program and the accompanying materials are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html
+
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://example.com/xsd-example/1.0/" targetNamespace="http://example.com/xsd-example/1.0/" elementFormDefault="qualified">
+	<xsd:element name="complexType">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="amount" type="xs:decimal"/> 
+				<xsd:element name="timestamp" type="xs:date"/> 
+				<xsd:element name="someEnum" type="xs:string"/> 
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="3"/>
+						<xsd:enumeration value="AAA"/>
+						<xsd:enumeration value="BBB"/>
+						<xsd:enumeration value="CCC"/>
+						<xsd:enumeration value="DDD"/>
+						<xsd:enumeration value="EEE"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
