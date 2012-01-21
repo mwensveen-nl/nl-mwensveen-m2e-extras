@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2012, M. Wensveen (mwensveen.nl)
+    All rights reserved.
+
+    This program and the accompanying materials are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html
+
+-->
+<lifecycleMappingMetadata>
+    <pluginExecutions>
+        <pluginExecution>
+            <pluginExecutionFilter>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-common-xsd</artifactId>
+                <versionRange>[2.0,3.0)</versionRange>
+                <goals>
+                    <goal>xsdtojava</goal>
+                </goals>
+            </pluginExecutionFilter>
+            <action>
+                <configurator>
+                    <id>nl.mwensveen.m2e.extras.cxf.xsdtojava.cxfConfigurator</id>
+                </configurator>
+            </action>
+        </pluginExecution>
+    </pluginExecutions>
+</lifecycleMappingMetadata>
