@@ -16,7 +16,7 @@
         <repositories>
           <repository>
             <id>central</id>
-            <url>file:/home/mwensveen/Java/Maven/Repository</url>
+            <url>file:remoterepo</url>
             <snapshots><enabled>true</enabled></snapshots>
             <releases><enabled>true</enabled></releases>
           </repository>
@@ -24,7 +24,7 @@
         <pluginRepositories>
           <pluginRepository>
             <id>central</id>
-            <url>file:/home/mwensveen/Java/Maven/Repository</url>
+            <url>file:remoterepo</url>
             <snapshots><enabled>true</enabled></snapshots>
             <releases><enabled>true</enabled></releases>
           </pluginRepository>
