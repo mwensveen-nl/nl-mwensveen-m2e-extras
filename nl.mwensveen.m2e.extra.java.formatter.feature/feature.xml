@@ -11,7 +11,7 @@
 <feature
       id="nl.mwensveen.m2e.extras.java.formatter.feature"
       label="%featureName"
-      version="0.6.0"
+      version="0.7.0"
       provider-name="%providerName"
       plugin="nl.mwensveen.m2e.extras.java.formatter">
 
@@ -31,7 +31,7 @@
          id="nl.mwensveen.m2e.extras.java.formatter"
          download-size="0"
          install-size="0"
-         version="0.6.0"
+         version="0.7.0"
          unpack="false"/>
 
 </feature>
