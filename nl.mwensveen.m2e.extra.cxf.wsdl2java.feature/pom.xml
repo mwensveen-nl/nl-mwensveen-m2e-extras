@@ -13,7 +13,7 @@
 	<parent>
 		<groupId>nl.mwensveen.m2e.extras</groupId>
 		<artifactId>m2eclipse-extras</artifactId>
-		<version>0.7.0</version>
+		<version>0.8.0</version>
 	</parent>
 	<artifactId>cxf.wsdl2java.feature</artifactId>
 	<packaging>eclipse-feature</packaging>

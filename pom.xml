@@ -14,7 +14,7 @@
 
 	<groupId>nl.mwensveen.m2e.extras</groupId>
 	<artifactId>m2eclipse-extras</artifactId>
-	<version>0.7.0</version>
+	<version>0.8.0</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -82,30 +82,7 @@
 				<configuration>
 					<header>${basedir}/header.txt</header>
 					<properties>
-						<year>2012</year>
-						<owner>M. Wensveen</owner>
-						<organization>mwensveen.nl</organization>
-					</properties>
-					<encoding>UTF-8</encoding>
-					<mapping>
-						<java>SLASHSTAR_STYLE</java>
-					</mapping>
-					<aggregate>true</aggregate>
-					<excludes>
-						<exclude>*/remoterepo/**</exclude>
-						<exclude>*/target/**</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>com.mycila.maven-license-plugin</groupId>
-				<artifactId>maven-license-plugin</artifactId>
-				<version>1.9.0</version>
-				<inherited>false</inherited>
-				<configuration>
-					<header>${basedir}/header.txt</header>
-					<properties>
-						<year>2012</year>
+						<year>2013</year>
 						<owner>M. Wensveen</owner>
 						<organization>mwensveen.nl</organization>
 					</properties>
