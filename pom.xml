@@ -14,7 +14,7 @@
 
 	<groupId>nl.mwensveen.m2e.extras</groupId>
 	<artifactId>m2eclipse-extras</artifactId>
-	<version>0.8.0</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -43,15 +43,15 @@
 
 	<repositories>
 		<repository>
-			<id>helios</id>
+			<id>eclipse</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/juno</url>
+			<url>http://download.eclipse.org/releases/kepler</url>
 		</repository>
 
 		<repository>
 			<id>m2e</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/technology/m2e/releases/1.0</url>
+			<url>http://download.eclipse.org/technology/m2e/releases</url>
 		</repository>
 	</repositories>
 

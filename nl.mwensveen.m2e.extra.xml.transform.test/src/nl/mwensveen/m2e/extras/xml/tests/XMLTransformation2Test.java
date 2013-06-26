@@ -7,20 +7,14 @@
  */
 package nl.mwensveen.m2e.extras.xml.tests;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.PrintWriter;
-
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.IncrementalProjectBuilder;
-import org.eclipse.core.runtime.Path;
 import org.eclipse.jdt.core.IClasspathEntry;
 import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.JavaCore;
 import org.eclipse.m2e.core.project.ResolverConfiguration;
 import org.eclipse.m2e.tests.common.AbstractMavenProjectTestCase;
-import org.junit.Test;
 
 public class XMLTransformation2Test extends AbstractMavenProjectTestCase {
 	public void test_p001_simple() throws Exception {

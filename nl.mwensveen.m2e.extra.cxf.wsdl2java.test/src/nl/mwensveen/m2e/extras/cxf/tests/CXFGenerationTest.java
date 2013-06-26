@@ -7,10 +7,6 @@
  */
 package nl.mwensveen.m2e.extras.cxf.tests;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.PrintWriter;
-
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.IncrementalProjectBuilder;
@@ -20,7 +16,6 @@ import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.JavaCore;
 import org.eclipse.m2e.core.project.ResolverConfiguration;
 import org.eclipse.m2e.tests.common.AbstractMavenProjectTestCase;
-import org.junit.Test;
 
 public class CXFGenerationTest extends AbstractMavenProjectTestCase {
 	public void test_p001_simple() throws Exception {
@@ -36,8 +31,16 @@ public class CXFGenerationTest extends AbstractMavenProjectTestCase {
 
 		IJavaProject javaProject1 = JavaCore.create(project1);
 		IClasspathEntry[] cp1 = javaProject1.getRawClasspath();
-
-		assertEquals(new Path("/cxf-codegen-test-project/target/generated-sources/cxf"), cp1[3].getPath());
+		boolean found = false;
+		for (IClasspathEntry iClasspathEntry : cp1) {
+			if (iClasspathEntry.getEntryKind() == IClasspathEntry.CPE_SOURCE) {
+				if (iClasspathEntry.getPath().equals(new Path("/cxf-codegen-test-project/target/generated-sources/cxf"))) {
+					found = true;
+				}
+			}
+		}
+		assertTrue(found);
+		// assertEquals(new Path("/cxf-codegen-test-project/target/generated-sources/cxf"), cp1[3].getPath());
 
 		assertTrue(project1.getFile("target/generated-sources/cxf/nl/mwensveen/cxf/wsdl2java/example/BibcodeQuery.java").isSynchronized(IResource.DEPTH_ZERO));
 		assertTrue(project1.getFile("target/generated-sources/cxf/nl/mwensveen/cxf/wsdl2java/example/BibcodeQuery.java").isAccessible());

@@ -9,12 +9,8 @@ package nl.mwensveen.m2e.extras.antrun.test;
 
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IncrementalProjectBuilder;
-import org.eclipse.jdt.core.IClasspathEntry;
-import org.eclipse.jdt.core.IJavaProject;
-import org.eclipse.jdt.core.JavaCore;
 import org.eclipse.m2e.core.project.ResolverConfiguration;
 import org.eclipse.m2e.tests.common.AbstractMavenProjectTestCase;
-
 
 public class AntRunGenerationTest extends AbstractMavenProjectTestCase {
 	public void test_p001_simple() throws Exception {
@@ -27,11 +23,10 @@ public class AntRunGenerationTest extends AbstractMavenProjectTestCase {
 		waitForJobsToComplete();
 		assertNoErrors(project1);
 
-//		IJavaProject javaProject1 = JavaCore.create(project1);
-//		IClasspathEntry[] cp1 = javaProject1.getRawClasspath();
+		// IJavaProject javaProject1 = JavaCore.create(project1);
+		// IClasspathEntry[] cp1 = javaProject1.getRawClasspath();
 
-
-//		assertTrue(project1.getFile("target/classes/index.html").exists());
+		// assertTrue(project1.getFile("target/classes/index.html").exists());
 		assertTrue(!project1.getFile("target/classes/index2.html").exists());
 	}
 
