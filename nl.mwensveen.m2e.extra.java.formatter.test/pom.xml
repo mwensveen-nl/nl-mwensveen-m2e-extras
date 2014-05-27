@@ -17,7 +17,7 @@
 		<version>2.0.0</version>
 	</parent>
 
-	<artifactId>java.formatter.test</artifactId>
+	<artifactId>nl.mwensveen.m2e.extras.java.formatter.test</artifactId>
 	<packaging>eclipse-test-plugin</packaging>
 
 	<build>
