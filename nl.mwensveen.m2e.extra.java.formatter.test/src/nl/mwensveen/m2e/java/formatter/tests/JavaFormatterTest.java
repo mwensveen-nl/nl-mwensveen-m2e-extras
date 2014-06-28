@@ -17,6 +17,7 @@ import org.eclipse.m2e.core.project.ResolverConfiguration;
 import org.eclipse.m2e.tests.common.AbstractMavenProjectTestCase;
 import org.junit.Assert;
 
+@SuppressWarnings( "restriction" )
 public class JavaFormatterTest extends AbstractMavenProjectTestCase {
 	public void test_p001_simple() throws Exception {
 		ResolverConfiguration configuration = new ResolverConfiguration();

@@ -1,51 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-    Copyright (c) 2012, M. Wensveen (mwensveen.nl)
-    All rights reserved.
-
-    This program and the accompanying materials are made available under the terms of the Eclipse Public License v1.0
-    which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html
-
--->
+<!-- Copyright (c) 2012, M. Wensveen (mwensveen.nl) All rights reserved. 
+	This program and the accompanying materials are made available under the 
+	terms of the Eclipse Public License v1.0 which accompanies this distribution, 
+	and is available at http://www.eclipse.org/legal/epl-v10.html -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>nl.mwensveen.m2e.extras</groupId>
 	<artifactId>m2eclipse-extras</artifactId>
-	<version>1.0.0</version>
+	<version>2.0.0</version>
 	<packaging>pom</packaging>
 
 	<properties>
-		<tycho-version>0.12.0</tycho-version>
-		<site-compressed>http://repository.sonatype.org/service/local/repositories/forge-sites/content-compressed/</site-compressed>
+		<tycho-version>0.20.0</tycho-version>
 	</properties>
-
-	<modules>
-		<module>nl.mwensveen.m2e.extra.antrun</module>
-		<module>nl.mwensveen.m2e.extra.antrun.feature</module>
-		<module>nl.mwensveen.m2e.extra.antrun.test</module>
-		<module>nl.mwensveen.m2e.extra.cxf.xsdtojava</module>
-		<module>nl.mwensveen.m2e.extra.cxf.xsdtojava.feature</module>
-		<module>nl.mwensveen.m2e.extra.cxf.xsdtojava.test</module>
-		<module>nl.mwensveen.m2e.extra.xml.transform</module>
-		<module>nl.mwensveen.m2e.extra.xml.transform.feature</module>
-		<module>nl.mwensveen.m2e.extra.xml.transform.test</module>
-		<module>nl.mwensveen.m2e.extra.cxf.wsdl2java</module>
-		<module>nl.mwensveen.m2e.extra.cxf.wsdl2java.feature</module>
-		<module>nl.mwensveen.m2e.extra.cxf.wsdl2java.test</module>
-		<module>nl.mwensveen.m2e.extra.java.formatter</module>
-		<module>nl.mwensveen.m2e.extra.java.formatter.feature</module>
-		<module>nl.mwensveen.m2e.extra.java.formatter.test</module>
-		<module>nl.mwensveen.m2e.extra.repo</module>
-	</modules>
 
 	<repositories>
 		<repository>
 			<id>eclipse</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/kepler</url>
+			<url>http://download.eclipse.org/releases/luna/</url>
 		</repository>
 
 		<repository>
@@ -57,10 +32,22 @@
 
 	<build>
 		<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>2.5.1</version>
+					<configuration>
+						<debug>true</debug>
+						<verbose>true</verbose>
+						<compilerVersion>1.7</compilerVersion>
+						<source>1.7</source>
+						<target>1.7</target>
+					</configuration>
+				</plugin>		
+		
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-maven-plugin</artifactId>
-				<version>${tycho-version}</version>
 				<extensions>true</extensions>
 			</plugin>
 
@@ -82,7 +69,7 @@
 				<configuration>
 					<header>${basedir}/header.txt</header>
 					<properties>
-						<year>2013</year>
+						<year>2014</year>
 						<owner>M. Wensveen</owner>
 						<organization>mwensveen.nl</organization>
 					</properties>
@@ -116,8 +103,23 @@
 						</includes>
 						<argLine>${tycho.test.jvmArgs}</argLine>
 						<!-- kill test JVM it tests take more than 10 minutes (600 seconds) 
-              to finish -->
+							to finish -->
 						<forkedProcessTimeoutInSeconds>7200</forkedProcessTimeoutInSeconds>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-maven-plugin</artifactId>
+					<version>${tycho-version}</version>
+					<extensions>true</extensions>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-compiler-plugin</artifactId>
+					<version>${tycho-version}</version>
+					<configuration>
+						<compilerArgument>-warn:+discouraged,forbidden</compilerArgument>
+						<requireJREPackageImports>true</requireJREPackageImports>
 					</configuration>
 				</plugin>
 
@@ -130,6 +132,25 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+
+	<modules>
+		<module>nl.mwensveen.m2e.extra.antrun</module>
+		<module>nl.mwensveen.m2e.extra.antrun.feature</module>
+		<module>nl.mwensveen.m2e.extra.antrun.test</module>
+		<module>nl.mwensveen.m2e.extra.cxf.xsdtojava</module>
+		<module>nl.mwensveen.m2e.extra.cxf.xsdtojava.feature</module>
+		<module>nl.mwensveen.m2e.extra.cxf.xsdtojava.test</module>
+		<module>nl.mwensveen.m2e.extra.xml.transform</module>
+		<module>nl.mwensveen.m2e.extra.xml.transform.feature</module>
+		<module>nl.mwensveen.m2e.extra.xml.transform.test</module>
+		<module>nl.mwensveen.m2e.extra.cxf.wsdl2java</module>
+		<module>nl.mwensveen.m2e.extra.cxf.wsdl2java.feature</module>
+		<module>nl.mwensveen.m2e.extra.cxf.wsdl2java.test</module>
+		<module>nl.mwensveen.m2e.extra.java.formatter</module>
+		<module>nl.mwensveen.m2e.extra.java.formatter.feature</module>
+		<module>nl.mwensveen.m2e.extra.java.formatter.test</module>
+		<module>nl.mwensveen.m2e.extra.repo</module>
+	</modules>
 
 	<profiles>
 		<profile>
@@ -154,7 +175,7 @@
 			</activation>
 			<properties>
 				<tycho.test.jvmArgs>-Xmx800m -XX:MaxPermSize=256m
-          -XstartOnFirstThread</tycho.test.jvmArgs>
+					-XstartOnFirstThread</tycho.test.jvmArgs>
 			</properties>
 			<build>
 				<pluginManagement>

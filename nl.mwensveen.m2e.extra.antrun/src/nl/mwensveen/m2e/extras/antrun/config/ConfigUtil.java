@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory;
 
 public class ConfigUtil {
 	private static final Logger LOG = LoggerFactory.getLogger(ConfigUtil.class);
-	private static Config config = null;
+	private static volatile Config config = null;
 
 	public static Config getConfig() {
 		if (config == null) {
@@ -27,6 +27,7 @@ public class ConfigUtil {
 					LOG.info("Reading AntRun configuration");
 					String userDir = System.getProperty("user.home", "");
 					File xml = new File(userDir + "/.m2/nl.mwensveen.m2e.extras.antrun.config.xml");
+					LOG.info("using config-file: " + xml.getAbsolutePath());
 					if (xml.exists()) {
 						try {
 							LOG.info("unmarshalling config");

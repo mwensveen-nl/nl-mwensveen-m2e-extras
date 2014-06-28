@@ -16,6 +16,7 @@ import org.eclipse.jdt.core.JavaCore;
 import org.eclipse.m2e.core.project.ResolverConfiguration;
 import org.eclipse.m2e.tests.common.AbstractMavenProjectTestCase;
 
+@SuppressWarnings( "restriction" )
 public class XMLTransformationTest extends AbstractMavenProjectTestCase {
 	public void test_p001_simple() throws Exception {
 		ResolverConfiguration configuration = new ResolverConfiguration();
