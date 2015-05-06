@@ -17,3 +17,5 @@ In the repository there are connectors for:
   * com.googlecode.maven-java-formatter-plugin:maven-java-formatter-plugin:[0,1):format
 
 See the [Wiki pages](https://github.com/mwensveen-nl/nl-mwensveen-m2e-extras/wiki) for more information about a specific connector.
+
+This project is licensed under the terms of the [Eclipse Public License - Version 1.0](https://www.eclipse.org/legal/epl-v10.html)
