@@ -12,6 +12,9 @@
 
   <profiles>
     <profile>
+        <properties>
+        <testprop>/usr/local/lib/java/android-sdk-linux</testprop>
+      </properties>
       <id>test</id>
         <repositories>
           <repository>

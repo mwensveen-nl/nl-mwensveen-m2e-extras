@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:antrunconfig xmlns:ns2="nl.mwensveen.m2e.extras.antrun">
+        <config-items>
+                <config-item>
+                        <groupid>nl.mwensveen.m2e.extras</groupid>
+                        <artifactid>antrun-test-project</artifactid>
+                        <executionid>test-one</executionid>
+                        <run>true</run>
+                </config-item>
+                <config-item>
+                        <groupid>nl.mwensveen.m2e.extras</groupid>
+                        <artifactid>antrun-test-project</artifactid>
+                        <executionid>test-two</executionid>
+                        <run>false</run>
+                </config-item>
+        </config-items>
+</ns2:antrunconfig>

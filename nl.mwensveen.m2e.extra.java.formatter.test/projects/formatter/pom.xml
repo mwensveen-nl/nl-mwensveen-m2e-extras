@@ -14,8 +14,8 @@
 
 	<groupId>nl.mwensveen.m2e.extras</groupId>
 	<artifactId>java-formatter-test-project</artifactId>
-	<version>0.2.0-SNAPSHOT</version>
-	<name>test generation for cxf</name>
+	<version>2.1.0</version>
+	<name>test for formatter</name>
 
 	<build>
 		<plugins>

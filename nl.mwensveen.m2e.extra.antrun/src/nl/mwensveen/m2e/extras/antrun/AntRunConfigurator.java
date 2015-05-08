@@ -17,12 +17,12 @@ import org.eclipse.m2e.core.lifecyclemapping.model.IPluginExecutionMetadata;
 import org.eclipse.m2e.core.project.IMavenProjectFacade;
 import org.eclipse.m2e.core.project.configurator.AbstractBuildParticipant;
 import org.eclipse.m2e.core.project.configurator.ProjectConfigurationRequest;
-import org.eclipse.m2e.jdt.AbstractJavaProjectConfigurator;
+import org.eclipse.m2e.jdt.AbstractSourcesGenerationProjectConfigurator;
 import org.eclipse.m2e.jdt.IClasspathDescriptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class AntRunConfigurator extends AbstractJavaProjectConfigurator {
+public class AntRunConfigurator extends AbstractSourcesGenerationProjectConfigurator {
 	private static final Logger LOG = LoggerFactory.getLogger(AntRunConfigurator.class);
 	private static Config config;
 
@@ -32,30 +32,28 @@ public class AntRunConfigurator extends AbstractJavaProjectConfigurator {
 	}
 
 	@Override
-	public AbstractBuildParticipant getBuildParticipant(IMavenProjectFacade projectFacade, MojoExecution execution,
-			IPluginExecutionMetadata executionMetadata) {
+	public AbstractBuildParticipant getBuildParticipant(IMavenProjectFacade projectFacade, MojoExecution execution, IPluginExecutionMetadata executionMetadata) {
 		String groupId = projectFacade.getMavenProject().getGroupId();
 		String artifactId = projectFacade.getMavenProject().getArtifactId();
 		String id = execution.getExecutionId();
 
-		LOG.debug("execution for " + groupId + ":" + artifactId + " - " + id);
+		LOG.debug("Checking execution for " + groupId + ":" + artifactId + " - " + id);
 		if (id == null) {
-			LOG.debug("no id, ignore execution.");
+			LOG.warn("Not running AntRun for " + groupId + ":" + artifactId + " because no id");
 			return null;
 		}
 		Boolean execute = ConfigUtil.mustRun(config, groupId, artifactId, id);
 		if (!execute) {
-			LOG.warn("Not running AntRun for "  + groupId + ":" + artifactId + " - " + id);
+			LOG.warn("Not running AntRun for " + groupId + ":" + artifactId + " - " + id);
 			return null;
 		}
-		LOG.debug("Returning Build Participant");
+		LOG.debug("Returning Build Participant for " + groupId + ":" + artifactId + " - " + id);
 		return new AntRunBuildParticipant(execution);
 	}
 
 	/** {@inheritDoc} */
 	@Override
-	public void configureRawClasspath(ProjectConfigurationRequest request, IClasspathDescriptor classpath, IProgressMonitor monitor)
-			throws CoreException {
+	public void configureRawClasspath(ProjectConfigurationRequest request, IClasspathDescriptor classpath, IProgressMonitor monitor) throws CoreException {
 		// The plugin does not use a claspath.
 		return;
 	}
