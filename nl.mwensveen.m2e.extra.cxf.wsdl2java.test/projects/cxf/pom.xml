@@ -14,7 +14,7 @@
 
 	<groupId>nl.mwensveen.m2e.extras</groupId>
 	<artifactId>cxf-codegen-test-project</artifactId>
-	<version>2.1.0</version>
+	<version>3.0.0</version>
 	<name>test generation for cxf-codegen</name>
 
 	<build>

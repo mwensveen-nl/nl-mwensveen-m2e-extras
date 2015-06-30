@@ -14,7 +14,7 @@
 
 	<groupId>nl.mwensveen.m2e.extras</groupId>
 	<artifactId>xml-test-project2</artifactId>
-	<version>2.1.0</version>
+	<version>3.0.0</version>
 	<name>test transformation for xml</name>
 
 	<build>
