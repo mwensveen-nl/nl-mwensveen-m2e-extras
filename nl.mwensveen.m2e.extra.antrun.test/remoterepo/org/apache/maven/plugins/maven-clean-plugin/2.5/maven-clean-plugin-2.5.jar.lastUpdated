@@ -1,4 +1,4 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Tue Jun 30 17:53:41 CEST 2015
-@default-central-http\://repo1.maven.org/maven2/.lastUpdated=1435679621867
-http\://repo1.maven.org/maven2/.error=Could not transfer artifact org.apache.maven.plugins\:maven-clean-plugin\:jar\:2.5 from/to central (http\://repo1.maven.org/maven2)\: Connection reset
+#Sat May 21 23:39:29 CEST 2016
+file\:remoterepo/.lastUpdated=1463866769058
+file\:remoterepo/.error=
