@@ -132,9 +132,7 @@
   </build>
   <modules>
     <module>nl.mwensveen.m2e.extra.antrun.module</module>
-    <module>nl.mwensveen.m2e.extra.cxf.xsdtojava</module>
-    <module>nl.mwensveen.m2e.extra.cxf.xsdtojava.feature</module>
-    <module>nl.mwensveen.m2e.extra.cxf.xsdtojava.test</module>
+    <module>nl.mwensveen.m2e.extra.cxf.xsdtojava.module</module>
     <module>nl.mwensveen.m2e.extra.xml.transform</module>
     <module>nl.mwensveen.m2e.extra.xml.transform.feature</module>
     <module>nl.mwensveen.m2e.extra.xml.transform.test</module>
