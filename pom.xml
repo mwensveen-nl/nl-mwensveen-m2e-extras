@@ -131,9 +131,7 @@
     </plugins>
   </build>
   <modules>
-    <module>nl.mwensveen.m2e.extra.antrun</module>
-    <module>nl.mwensveen.m2e.extra.antrun.feature</module>
-    <module>nl.mwensveen.m2e.extra.antrun.test</module>
+    <module>nl.mwensveen.m2e.extra.antrun.module</module>
     <module>nl.mwensveen.m2e.extra.cxf.xsdtojava</module>
     <module>nl.mwensveen.m2e.extra.cxf.xsdtojava.feature</module>
     <module>nl.mwensveen.m2e.extra.cxf.xsdtojava.test</module>
