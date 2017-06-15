@@ -137,9 +137,7 @@
     <module>nl.mwensveen.m2e.extra.xml.transform.feature</module>
     <module>nl.mwensveen.m2e.extra.xml.transform.test</module>
     <module>nl.mwensveen.m2e.extra.cxf.wsdl2java.module</module>
-    <module>nl.mwensveen.m2e.extra.java.formatter</module>
-    <module>nl.mwensveen.m2e.extra.java.formatter.feature</module>
-    <module>nl.mwensveen.m2e.extra.java.formatter.test</module>
+    <module>nl.mwensveen.m2e.extra.java.formatter.module</module>
     <module>nl.mwensveen.m2e.extra.repo</module>
   </modules>
   <profiles>

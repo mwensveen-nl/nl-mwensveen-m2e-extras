@@ -7,7 +7,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>nl.mwensveen.m2e.extras</groupId>
-		<artifactId>nl.mwensveen.m2e.extras.antrun.module</artifactId>
+		<artifactId>nl.mwensveen.m2e.extra.antrun.module</artifactId>
 		<version>5.0.0</version>
 	</parent>
 

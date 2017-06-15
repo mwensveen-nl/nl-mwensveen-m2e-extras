@@ -12,11 +12,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>nl.mwensveen.m2e.extras</groupId>
-		<artifactId>nl.mwensveen.m2e.extra.antrun.module</artifactId>
+		<artifactId>nl.mwensveen.m2e.extra.java.formatter.module</artifactId>
 		<version>5.0.0</version>
 	</parent>
-	<artifactId>nl.mwensveen.m2e.extras.antrun.feature</artifactId>
+	
+	<artifactId>nl.mwensveen.m2e.extras.java.formatter.feature</artifactId>
 	<packaging>eclipse-feature</packaging>
+
 	<build>
 		<plugins>
 			<plugin>

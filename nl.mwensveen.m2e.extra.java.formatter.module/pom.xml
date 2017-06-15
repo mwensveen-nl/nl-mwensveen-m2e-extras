@@ -6,12 +6,12 @@
 		<version>5.0.0</version>
 	</parent>
 
-	<artifactId>nl.mwensveen.m2e.extra.antrun.module</artifactId>
+	<artifactId>nl.mwensveen.m2e.extra.java.formatter.module</artifactId>
     <packaging>pom</packaging>
     
     <modules>
-      <module>nl.mwensveen.m2e.extra.antrun</module>
-      <module>nl.mwensveen.m2e.extra.antrun.feature</module>
-      <module>nl.mwensveen.m2e.extra.antrun.test</module>
+      <module>nl.mwensveen.m2e.extra.java.formatter</module>
+      <module>nl.mwensveen.m2e.extra.java.formatter.feature</module>
+      <module>nl.mwensveen.m2e.extra.java.formatter.test</module>
     </modules>
 </project>
