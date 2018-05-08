@@ -12,19 +12,19 @@
    <description url="http://code.google.com/p/nl-mwensveen-m2e-extras/">
       MWensveen.nl m2e Extensions
    </description>
-   <feature url="features/cxf.xsdtojava.feature_4.0.0.jar" id="nl.mwensveen.m2e.extras.cxf.xsdtojava.feature" version="5.0.0">
+   <feature url="features/cxf.xsdtojava.feature_4.0.0.jar" id="nl.mwensveen.m2e.extras.cxf.xsdtojava.feature" version="6.0.0">
       <category name="MWensveen.nl m2e Extensions"/>
    </feature>
-   <feature url="features/antrun.feature_4.0.0.jar" id="nl.mwensveen.m2e.extras.antrun.feature" version="5.0.0">
+   <feature url="features/antrun.feature_4.0.0.jar" id="nl.mwensveen.m2e.extras.antrun.feature" version="6.0.0">
       <category name="MWensveen.nl m2e Extensions"/>
    </feature>
-   <feature url="features/xml.transform.feature_4.0.0.jar" id="nl.mwensveen.m2e.extras.xml.transform.feature" version="5.0.0">
+   <feature url="features/xml.transform.feature_4.0.0.jar" id="nl.mwensveen.m2e.extras.xml.transform.feature" version="6.0.0">
       <category name="MWensveen.nl m2e Extensions"/>
    </feature>
-   <feature url="features/cxf.wsdl2java.feature_4.0.0.jar" id="nl.mwensveen.m2e.extras.cxf.wsdl2java.feature" version="5.0.0">
+   <feature url="features/cxf.wsdl2java.feature_4.0.0.jar" id="nl.mwensveen.m2e.extras.cxf.wsdl2java.feature" version="6.0.0">
       <category name="MWensveen.nl m2e Extensions"/>
    </feature>
-   <feature url="features/java.formatter.feature_4.0.0.jar" id="nl.mwensveen.m2e.extras.java.formatter.feature" version="5.0.0">
+   <feature url="features/java.formatter.feature_4.0.0.jar" id="nl.mwensveen.m2e.extras.java.formatter.feature" version="6.0.0">
       <category name="MWensveen.nl m2e Extensions"/>
    </feature>
    <category-def name="MWensveen.nl m2e Extensions" label="MWensveen.nl m2e Extensions"/>

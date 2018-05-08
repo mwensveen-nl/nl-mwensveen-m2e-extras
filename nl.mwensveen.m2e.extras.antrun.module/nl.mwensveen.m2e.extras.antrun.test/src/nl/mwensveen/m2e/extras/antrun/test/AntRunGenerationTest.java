@@ -28,7 +28,7 @@ public class AntRunGenerationTest extends AbstractMavenProjectTestCase {
 		File outputFile = new File(m2Dir, "nl.mwensveen.m2e.extras.antrun.config.xml");
 		assertTrue(outputFile.getParentFile().mkdirs());
 		ByteSource asByteSource = Resources.asByteSource(AntRunGenerationTest.class.getClassLoader().getResource("nl.mwensveen.m2e.extras.antrun.config.xml"));
-		Files.copy(asByteSource, outputFile);
+		asByteSource.copyTo(Files.asByteSink(outputFile)) ;
 
 		System.setProperty("user.home", tempDir.getAbsolutePath());
 
