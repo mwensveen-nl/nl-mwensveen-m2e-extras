@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='MWensveen.nl m2e Repository' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='3'>
+    <property name='publishPackFilesAsSiblings' value='true'/>
+    <property name='p2.compressed' value='true'/>
+    <property name='p2.timestamp' value='1546119565706'/>
+  </properties>
+  <mappings size='5'>
+    <rule filter='(&amp; (classifier=osgi.bundle) (format=packed))' output='${repoUrl}/plugins/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature) (format=packed))' output='${repoUrl}/features/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='10'>
+    <artifact classifier='org.eclipse.update.feature' id='nl.mwensveen.m2e.extras.xml.transform.feature' version='6.2.0'>
+      <properties size='9'>
+        <property name='artifact.size' value='10631'/>
+        <property name='download.size' value='10631'/>
+        <property name='maven-groupId' value='nl.mwensveen.m2e.extras'/>
+        <property name='maven-artifactId' value='nl.mwensveen.m2e.extras.xml.transform.feature'/>
+        <property name='maven-version' value='6.2.0'/>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.md5' value='9ff5e85c16a5c891d5a281e1a676bdfb'/>
+        <property name='download.checksum.md5' value='9ff5e85c16a5c891d5a281e1a676bdfb'/>
+        <property name='download.checksum.sha-256' value='13a7c2a3557fba4f4a74e3b087afac48cedf8ea72f35550fa9f9236cb907094d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='nl.mwensveen.m2e.extras.cxf.wsdl2java' version='6.2.0'>
+      <properties size='8'>
+        <property name='artifact.size' value='6688'/>
+        <property name='download.size' value='6688'/>
+        <property name='maven-groupId' value='nl.mwensveen.m2e.extras'/>
+        <property name='maven-artifactId' value='nl.mwensveen.m2e.extras.cxf.wsdl2java'/>
+        <property name='maven-version' value='6.2.0'/>
+        <property name='download.md5' value='416a6e70f8eb61d5ff634ae0cec0965b'/>
+        <property name='download.checksum.md5' value='416a6e70f8eb61d5ff634ae0cec0965b'/>
+        <property name='download.checksum.sha-256' value='995bcf5f7abe5f0045c8230ff898b69458e7a68aa084f83cdc83fe0404a64ff8'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='nl.mwensveen.m2e.extras.antrun.feature' version='6.2.0'>
+      <properties size='9'>
+        <property name='artifact.size' value='10627'/>
+        <property name='download.size' value='10627'/>
+        <property name='maven-groupId' value='nl.mwensveen.m2e.extras'/>
+        <property name='maven-artifactId' value='nl.mwensveen.m2e.extras.antrun.feature'/>
+        <property name='maven-version' value='6.2.0'/>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.md5' value='e0813b0b165a84cd22f3305c5ad9af0f'/>
+        <property name='download.checksum.md5' value='e0813b0b165a84cd22f3305c5ad9af0f'/>
+        <property name='download.checksum.sha-256' value='f496e6522cc1da33865a1e6a2046198173c701cb45b753015479220b3af2f096'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='nl.mwensveen.m2e.extras.java.formatter' version='6.2.0'>
+      <properties size='8'>
+        <property name='artifact.size' value='5937'/>
+        <property name='download.size' value='5937'/>
+        <property name='maven-groupId' value='nl.mwensveen.m2e.extras'/>
+        <property name='maven-artifactId' value='nl.mwensveen.m2e.extras.java.formatter'/>
+        <property name='maven-version' value='6.2.0'/>
+        <property name='download.md5' value='1c198dbaaf517fbb7042754b18c1db19'/>
+        <property name='download.checksum.md5' value='1c198dbaaf517fbb7042754b18c1db19'/>
+        <property name='download.checksum.sha-256' value='b3cc1faa66d0b052c68e3b7b6a1b2f86ec3e954137a66ddd5cbdba3b46bf3a23'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='nl.mwensveen.m2e.extras.cxf.xsdtojava' version='6.2.0'>
+      <properties size='8'>
+        <property name='artifact.size' value='6732'/>
+        <property name='download.size' value='6732'/>
+        <property name='maven-groupId' value='nl.mwensveen.m2e.extras'/>
+        <property name='maven-artifactId' value='nl.mwensveen.m2e.extras.cxf.xsdtojava'/>
+        <property name='maven-version' value='6.2.0'/>
+        <property name='download.md5' value='942db104df639a1628e23681705ef26f'/>
+        <property name='download.checksum.md5' value='942db104df639a1628e23681705ef26f'/>
+        <property name='download.checksum.sha-256' value='8002945c6b2e071bcb0ccb56f7feedf909e9a606a288e2637040945f2b01305e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='nl.mwensveen.m2e.extras.cxf.wsdl2java.feature' version='6.2.0'>
+      <properties size='9'>
+        <property name='artifact.size' value='10636'/>
+        <property name='download.size' value='10636'/>
+        <property name='maven-groupId' value='nl.mwensveen.m2e.extras'/>
+        <property name='maven-artifactId' value='nl.mwensveen.m2e.extras.cxf.wsdl2java.feature'/>
+        <property name='maven-version' value='6.2.0'/>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.md5' value='8f3bca9e2967490740bcfc4957b52495'/>
+        <property name='download.checksum.md5' value='8f3bca9e2967490740bcfc4957b52495'/>
+        <property name='download.checksum.sha-256' value='00188119c1df01106742a18199b20a9afc6995a4ddbf1beb4baf471fdc386b1e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='nl.mwensveen.m2e.extras.antrun' version='6.2.0'>
+      <properties size='8'>
+        <property name='artifact.size' value='10282'/>
+        <property name='download.size' value='10282'/>
+        <property name='maven-groupId' value='nl.mwensveen.m2e.extras'/>
+        <property name='maven-artifactId' value='nl.mwensveen.m2e.extras.antrun'/>
+        <property name='maven-version' value='6.2.0'/>
+        <property name='download.md5' value='cf933d70f384b4f99da9f659ccd7cc3e'/>
+        <property name='download.checksum.md5' value='cf933d70f384b4f99da9f659ccd7cc3e'/>
+        <property name='download.checksum.sha-256' value='06a2c11662c2c2d9076224a2e4efd78afb8c676b21c9cbd49c9037b46e66e12d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='nl.mwensveen.m2e.extras.cxf.xsdtojava.feature' version='6.2.0'>
+      <properties size='9'>
+        <property name='artifact.size' value='10636'/>
+        <property name='download.size' value='10636'/>
+        <property name='maven-groupId' value='nl.mwensveen.m2e.extras'/>
+        <property name='maven-artifactId' value='nl.mwensveen.m2e.extras.cxf.xsdtojava.feature'/>
+        <property name='maven-version' value='6.2.0'/>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.md5' value='3501f97911c552087dcc6ab113b215a9'/>
+        <property name='download.checksum.md5' value='3501f97911c552087dcc6ab113b215a9'/>
+        <property name='download.checksum.sha-256' value='c50805ef10182e2f91d42ca39122bdb458c7d98be57709dafeff8f492eb3b96c'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='nl.mwensveen.m2e.extras.xml.transform' version='6.2.0'>
+      <properties size='8'>
+        <property name='artifact.size' value='8280'/>
+        <property name='download.size' value='8280'/>
+        <property name='maven-groupId' value='nl.mwensveen.m2e.extras'/>
+        <property name='maven-artifactId' value='nl.mwensveen.m2e.extras.xml.transform'/>
+        <property name='maven-version' value='6.2.0'/>
+        <property name='download.md5' value='09288bd2927d393bc2bc16de358295a6'/>
+        <property name='download.checksum.md5' value='09288bd2927d393bc2bc16de358295a6'/>
+        <property name='download.checksum.sha-256' value='bd813831c8c19e1beff7b1798eed38ab724173271167c6356a3c7020b6b841f1'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='nl.mwensveen.m2e.extras.java.formatter.feature' version='6.2.0'>
+      <properties size='9'>
+        <property name='artifact.size' value='10633'/>
+        <property name='download.size' value='10633'/>
+        <property name='maven-groupId' value='nl.mwensveen.m2e.extras'/>
+        <property name='maven-artifactId' value='nl.mwensveen.m2e.extras.java.formatter.feature'/>
+        <property name='maven-version' value='6.2.0'/>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.md5' value='5e57f44b2e16c6425faf5f1d9eccf72e'/>
+        <property name='download.checksum.md5' value='5e57f44b2e16c6425faf5f1d9eccf72e'/>
+        <property name='download.checksum.sha-256' value='27fb1085e04b89ad98c20c84932ec6b2bcd4145c93deaf6032d23d758452f1da'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>
