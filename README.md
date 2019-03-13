@@ -5,7 +5,7 @@ Configurators like these are needed to prevent the 'Plugin execution not covered
 
 For more information on project connectors see [m2e wiki](https://www.eclipse.org/m2e/documentation/m2e-execution-not-covered.html)
 
-The connectors can be installed in Eclipse by using the update side.
+The connectors can be installed in Eclipse by using the update site.
 See [here](http://mwensveen-nl.github.io/nl-mwensveen-m2e-extras/)
 
 In the repository there are connectors for:
