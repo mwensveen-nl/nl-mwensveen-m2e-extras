@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Tests Plug-in
 Bundle-SymbolicName: nl.mwensveen.m2e.extras.xml.transform.test
 Bundle-Version: 6.2.0
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Vendor: MWensveen.nl
 Require-Bundle: 
  org.eclipse.core.resources;bundle-version="3.4.2",

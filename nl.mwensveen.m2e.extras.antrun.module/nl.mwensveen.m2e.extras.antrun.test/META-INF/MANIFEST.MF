@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Tests Plug-in
 Bundle-SymbolicName: nl.mwensveen.m2e.extras.antrun.test
 Bundle-Version: 6.2.0
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: 
  org.eclipse.core.resources;bundle-version="[3.13.0,3.14.0)",
  org.eclipse.core.runtime;bundle-version="[3.14.0,4.0)",
@@ -12,6 +12,7 @@ Require-Bundle:
  org.eclipse.m2e.tests.common;bundle-version="[1.9.0,2.0.0)",
  org.junit;bundle-version="[4.12.0,4.13.0)",
  nl.mwensveen.m2e.extras.antrun;bundle-version="6.2.0",
- com.google.guava;bundle-version="[16.1.0,22.0.0)"
+ com.google.guava;bundle-version="[16.1.0,22.0.0)",
+ javax.annotation;bundle-version="1.2.0"
 Bundle-Vendor: MWensveen.nl
 Automatic-Module-Name: nl.mwensveen.m2e.extras.antrun.test

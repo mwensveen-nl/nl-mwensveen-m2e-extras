@@ -33,7 +33,7 @@
   </profiles>
 
   <activeProfiles>
-    <activeProfile>test</activeProfile>
+     <activeProfile>test</activeProfile>
   </activeProfiles>
 
 </settings>
