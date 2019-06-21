@@ -13,25 +13,29 @@
 	<packaging>pom</packaging>
 	<properties>
 		<tycho-version>1.3.0</tycho-version>
-		<eclipse.stream>2019-03</eclipse.stream>
+		<eclipse.stream>2019-06</eclipse.stream>
 		<eclipse-repo.url>http://download.eclipse.org/eclipse/updates/4.11/</eclipse-repo.url>
 		<eclipse-simrel.url>http://download.eclipse.org/releases/${eclipse.stream}</eclipse-simrel.url>
+		<m2e.stream>1.12</m2e.stream>
+		<m2e.release.url>https://download.eclipse.org/technology/m2e/releases/${m2e.stream}</m2e.release.url>
+		<orbit.stream>R20190602212107</orbit.stream>
+		<orbit.release.url>https://download.eclipse.org/tools/orbit/downloads/drops/${orbit.stream}/repository/</orbit.release.url>
 	</properties>
 	<repositories>
 		<repository>
 			<id>eclipse</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/eclipse/updates/4.12milestones/</url>
+			<url>${eclipse-simrel.url}</url>
 		</repository>
 		<repository>
 			<id>m2e</id>
 			<layout>p2</layout>
-			<url>https://download.eclipse.org/technology/m2e/milestones/1.12/</url>
+			<url>${m2e.release.url}</url>
 		</repository>
 		<repository>
 			<id>Orbit 2019-06 M3</id>
 			<layout>p2</layout>
-			<url>https://download.eclipse.org/tools/orbit/downloads/drops/S20190521195709/repository/</url>
+			<url>${orbit.release.url}</url>
 		</repository>
 	</repositories>
 	<build>
