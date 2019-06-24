@@ -13,7 +13,7 @@
 	<parent>
 		<groupId>nl.mwensveen.m2e.extras</groupId>
 		<artifactId>nl.mwensveen.m2e.extras.cxf.xsdtojava.module</artifactId>
-		<version>6.2.0</version>
+		<version>6.3.0</version>
 	</parent>
 	<artifactId>nl.mwensveen.m2e.extras.cxf.xsdtojava.feature</artifactId>
 	<packaging>eclipse-feature</packaging>

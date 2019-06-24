@@ -11,7 +11,7 @@
 <feature
       id="nl.mwensveen.m2e.extras.cxf.xsdtojava.feature"
       label="%featureName"
-      version="6.2.0"
+      version="6.3.0"
       provider-name="%providerName"
       plugin="nl.mwensveen.m2e.extras.cxf.xsdtojava">
 
@@ -31,7 +31,7 @@
          id="nl.mwensveen.m2e.extras.cxf.xsdtojava"
          download-size="0"
          install-size="0"
-         version="6.2.0"
+         version="6.3.0"
          unpack="false"/>
 
 </feature>
